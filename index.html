@@ -2,33 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./output.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
 </head>
-<body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="flex flex-col bg-grey-900 h-screen text-white justify-center items-center">
+  <section>
+    <div class="bg-grey-800 flex flex-col gap-5 rounded-[10px] font-['inter'] shadow-lg">
+        <div class="flex flex-col gap-2 jusitfy-center items-center mt-[20px]">
+            <img src="./assets/images/avatar-jessica.jpeg" alt="image" class="h-[100px] w-[100px] rounded-[50%]">
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[5px]">
+            <p class="font-[700] text-[20px]">Jessica Randall</p>
+            <p class="font-[600] text-green text-[14px]">London, United Kingdom</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-[10px] m-[20px]">
+            <p class="text-[14px] mb-[20px] font-[400]">"Front-end developer and avid reader."</p> 
+            <p class="text-[14px] font-[700] bg-grey-700 w-full text-center p-[10px] rounded-[7px] hover:bg-green hover:text-grey-900 cursor-pointer">GitHub</p>
+            <p class="text-[14px] font-[700] bg-grey-700 w-full text-center p-[10px] rounded-[7px] hover:bg-green hover:text-grey-900 cursor-pointer">Frontend Mentor</p>
+            <p class="text-[14px] font-[700] bg-grey-700 w-full text-center p-[10px] rounded-[7px] hover:bg-green hover:text-grey-900 cursor-pointer">LinkedIn</p>
+            <p class="text-[14px] font-[700] bg-grey-700 w-full text-center p-[10px] rounded-[7px] hover:bg-green hover:text-grey-900 cursor-pointer">Twitter</p>
+            <p class="text-[14px] font-[700] bg-grey-700 w-full text-center p-[10px] rounded-[7px] mb-[10px] hover:bg-green hover:text-grey-900 cursor-pointer">Instagram</p>
+        </div>
+    </div>
+  </section>
 </body>
 </html>
